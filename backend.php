@@ -11,7 +11,7 @@ Battery Level: <?php echo $_POST["battlevel"]; ?><br>
 
 <?php else: ?>
 
-<form action="/public/GroupDesignProjectServer/backend..php" method="post">
+<form action="/public/GroupDesignProjectServer/backend.php" method="post">
 Bin Level: <input type="text" name="level"><br>
 Bin Level Max: <input type="text" name="levelmax"><br>
 Battery Level: <input type="text" name="battlevel"><br>
