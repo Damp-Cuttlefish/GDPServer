@@ -5,7 +5,7 @@
 </head>
 
 <body>
-<h1>Some kind of bin data page</h1>
+<h1>Bin Data</h1>
 <?php if (array_key_exists('submit', $_POST)): ?>
 Data From Sensor #<?php echo $_POST["uid"]; ?><br>
 
