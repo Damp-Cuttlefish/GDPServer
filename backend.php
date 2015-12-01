@@ -1,7 +1,7 @@
 <html>
 <head>
 <link rel="icon" type="image/gif" href="/public/chen.gif" />
-<link rel="stylesheet" type="text/css" href="/public/style.css">
+<link rel="stylesheet" type="text/css" href="horrendous_style.css">
 </head>
 
 <body>
