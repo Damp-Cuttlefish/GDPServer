@@ -1,7 +1,5 @@
 <html>
 
-
-<html>
 <body>
 <?php if (array_key_exists('submit', $_POST)): ?>
 Data From Sensor #<?php echo $_POST["uid"]; ?><br>
