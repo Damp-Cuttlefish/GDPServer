@@ -10,7 +10,6 @@ Level: <?php echo $_POST["level"]; ?><br>
 Max Level: <?php echo $_POST["levelmax"]; ?> <br>
 Fill Percentage: <?php echo 100*(intval($_POST["level"])/intval($_POST["levelmax"])) ?><br>
 Battery Level: <?php echo $_POST["battlevel"]; ?><br>
-<?php if (array_key_exists('submit', $_POST)): ?>
 
 <?php else: ?>
 
