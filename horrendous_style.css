@@ -1,0 +1,38 @@
+/*background-color:#140000;
+background-image:url("http://i.imgur.com/1KxC2kw.png");*/
+background-image:url("https://i.imgur.com/ybm0Bfn.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+background-attachment:fixed;
+background-position:center;
+font-family:Arial, Helvetica, sans-serif;
+}
+h1
+{
+color: #004eff;
+font-family:"Comic Sans MS", Courier, monospace;
+text-align:center;
+}
+h3
+{
+font-family:"Comic Sans MS", Helvetica, sans-serif;
+color:#555753;
+}
+p
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size:20px;
+}
+h2
+{
+font-family:Arial, Helvetica, sans-serif;
+color:#555753;
+text-align:center;
+
+}
+
+h4
+{
+font-family:Arial, Helvetica, sans-serif;
+color:#555753;
+text-align:center;

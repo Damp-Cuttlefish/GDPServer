@@ -1,4 +1,8 @@
 <html>
+<head>
+<link rel="icon" type="image/gif" href="/public/chen.gif" />
+<link rel="stylesheet" type="text/css" href="horrendous_style.css">
+</head>
 
 <body>
 <?php if (array_key_exists('submit', $_POST)): ?>
