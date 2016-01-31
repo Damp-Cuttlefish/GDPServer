@@ -2,15 +2,6 @@ POST /public/GDPServer/ctest.php HTTP/1.1
 
 HTTP headers:
 Host: yourwaifuaslut.xyz
-Connection: keep-alive
-Cache-Control: max-age=0
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
-Origin: https://yourwaifuaslut.xyz
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36
-Referer: https://yourwaifuaslut.xyz/public/GDPServer/backend.php
-Accept-Encoding: gzip, deflate
-Accept-Language: en-GB,en-US;q=0.8,en;q=0.6
 
 Response body:
-level=Over+9000&levelmax=Probably+like+100&battlevel=Floor&uid=Kevin&submit=Submit
+
