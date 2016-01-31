@@ -1,2 +1,2 @@
-# GroupDesignProjectServer
-Serverside software for bin monitoring
+# Binformant server
+Serverside software for bin monitoring, pretty cool right?
