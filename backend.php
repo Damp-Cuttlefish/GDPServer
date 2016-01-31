@@ -17,7 +17,7 @@ Battery Level: <?php echo $_POST["battlevel"]; ?><br>
 
 <?php else: ?>
 
-<form action="/public/GDPServer/backend.php" method="post">
+<form action="/public/GDPServer/ctest.php" method="post">
 Bin Level: <input type="text" name="level"><br>
 Bin Level Max: <input type="text" name="levelmax"><br>
 Battery Level: <input type="text" name="battlevel"><br>
