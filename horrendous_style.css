@@ -1,21 +1,25 @@
-/*background-color:#140000;
-background-image:url("http://i.imgur.com/1KxC2kw.png");*/
-background-image:url("https://i.imgur.com/ybm0Bfn.jpg");
-background-repeat:no-repeat;
-background-size:cover;
-background-attachment:fixed;
-background-position:center;
+a:link {color:#f57900;}      /* unvisited link */
+a:visited {color:#ce5c00;}  /* visited link */
+a:hover {color:#fcaf3e;}  /* mouse over link */
+a:active {color:#fcaf3e;}  /* selected link */
+
+body
+{
+background-color:#BFBFBF;
 font-family:Arial, Helvetica, sans-serif;
+font-family:Arial, Helvetica, sans-serif;
+text-align:center;
+color:#d2738a;
 }
 h1
 {
-color: #004eff;
-font-family:"Comic Sans MS", Courier, monospace;
+color:#d2738a;
+font-family:Arial, Helvetica, sans-serif;
 text-align:center;
 }
 h3
 {
-font-family:"Comic Sans MS", Helvetica, sans-serif;
+font-family:Arial, Helvetica, sans-serif;
 color:#555753;
 }
 p
@@ -36,4 +40,10 @@ h4
 font-family:Arial, Helvetica, sans-serif;
 color:#555753;
 text-align:center;
+
+}
+
+alan{
+	font-size: 15%;
+	color: GREEN;
 }
