@@ -17,6 +17,21 @@
     </style>
   </head>
   <body>
+  <?php
+       class BDB extends SQLite3
+       {
+          function __construct()
+          {
+             $this->open('bins.db');
+          }
+       }
+       $db = new BDB();
+       if(!$db){
+          echo $db->lastErrorMsg();
+       } else {
+          echo "Opened database successfully\n";
+       }
+    ?>
     <div id="map"></div>
     <script>
       var map;
@@ -27,26 +42,20 @@
         });
         
         var locations = [
-    [
-        "<h3>A Bin</h3> The bin we put rubbish in",
-        50.79,
-        -1.083,
-        1,
-        "Some Guy",
-        "",
-        "Norfolk Botanical Gardens, 6700 Azalea Garden Rd.",
-        "coming soon"
+         <?php 
+                $sql ="SELECT * from bins;";
+
+                $ret = $db->query($sql);
+                $pointcount = 1;
+                while($row = $ret->fetchArray(SQLITE3_ASSOC) ){          
+                ?>
+    [ "<h3><?php echo $row['name'];?></h3><?php echo $row['description'];?> <br> <img src=<?php echo $row['image_path'];?> width=100px>",
+        <?php echo $row['location'];?>,
+        <?php echo $pointcount; ?>,
+        "<?php echo $row['account_id'];?>",
+        "<?php echo $row['name'];?>"
     ],
-    [
-        "<h3>Another Bin</h3> That really cool bin everyone likes",
-        50.79,
-        -1.076203,
-        2,
-        "Terry Cox-Joseph",
-        "Rowena's",
-        "758 W. 22nd Street in front of Rowena's",
-        "found"
-    ],
+    <?php $pointcount++; }?>
     
 ]
     var infowindow = new google.maps.InfoWindow();

@@ -9,6 +9,21 @@
 </head>
 <meta charset="UTF-8">
 <body>
+    <?php
+       class BDB extends SQLite3
+       {
+          function __construct()
+          {
+             $this->open('bins.db');
+          }
+       }
+       $db = new BDB();
+       if(!$db){
+          echo $db->lastErrorMsg();
+       } else {
+          echo "Opened database successfully\n";
+       }
+    ?>
     <h1 style="z-index:2;">&nbsp;&nbsp;Binformant v0.2β </h1>
     <header style="z-index:1;">
         <a href="bins.php" class="abutton + button">Bins</a>
@@ -58,8 +73,16 @@
         <div style="position:relative; top:20px;">
             <p>
             <table style="width:100%">
+                
+                <?php 
+                $sql ="SELECT * from bins;";
+
+                $ret = $db->query($sql);
+                while($row = $ret->fetchArray(SQLITE3_ASSOC) ){                          
+                ?>
+                
                 <tr width=100px>
-                    <td><img src="bin.jpg"></td>
+                    <td><img src="<?php echo $row['image_path'];?>"></td>
                     <td>
                         <div style="width:131px; float:left;">
                             <ftxt> 32% </ftxt>
@@ -73,54 +96,15 @@
                         </div>
                         <div style="width:300px; float:left;">
                             <h3>
-                                A bin
+                                <?php echo $row['name'];?>
                             </h3>
-                            That bin that we put rubbish in
+                            <?php echo $row['description'];?>
                         </div>
                     </td>
                 </tr>
-                <tr width=100px>
-                    <td><img src="bin.jpg"></td>
-                    <td>
-                        <div style="width:131px; float:left;">
-                            <ftxt> 0% </ftxt>
-                        </div>
-                        <div style="width:131px; float:right;">
-                            <a href="edit.php" class="rbutton">Edit</a>
-                            <a href="stats.php" class="rbutton">Stats</a>
-                        </div>
-                        <div style="width:131px; float:left;">
-                            <h2>ETF: End of Time</h2>
-                        </div>
-                        <div style="width:300px; float:left;">
-                            <h3>
-                                Gareth
-                            </h3>
-                            The shit bin noone likes
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width:130px"><img src="bin2.jpg" height=300px></td>
-                    <td>
-                        <div style="width:131px; float:left;">
-                            <ftxt> Full </ftxt>
-                        </div>
-                        <div style="width:131px; float:right;">
-                            <a href="edit.php" class="rbutton">Edit</a>
-                            <a href="stats.php" class="rbutton">Stats</a>
-                        </div>
-        </div>
-        <div style="width:131px; float:left;">
-        <h2>Since last week</h2>
-        </div>
-        <div style="width:300px; float:left;">
-        <h3>
-        Another Bin
-        </h3>
-        The cool bin everyone likes
-        </td> 
-        </tr>
+                
+                <?php } ?>
+                
         </table>
         </p>
         </div>
@@ -129,3 +113,6 @@
         こんにちは、私はフッターちゃんです、はじめまして
     </footer>
 </body>
+<?php
+$db->close();
+?>
