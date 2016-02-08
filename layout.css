@@ -158,3 +158,39 @@ filterbar {
 #map {
     height: 100%;
 }
+
+
+
+
+.wrapper {
+  cursor: help;
+  position: relative;
+  text-align: center;
+  width: 100px;
+
+
+}
+
+.wrapper .tooltip {
+  background: #564256;
+  color:#FFFFFF;
+  left: 50%%;
+
+  display: block;
+  margin-bottom: 15px;
+  opacity: 0;
+  padding: 20px;
+  position: absolute;
+  width: 100px;
+  
+}
+
+
+
+
+  
+.wrapper:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+ 
+}

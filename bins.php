@@ -88,8 +88,8 @@
                             <ftxt> 32% </ftxt>
                         </div>
                         <div style="width:131px; float:right;">
-                            <a href="edit.php" class="rbutton">Edit</a>
-                            <a href="stats.php" class="rbutton">Stats</a>
+                            <a href="edit.php?uid=<?php echo $row['uid'];?>" class="rbutton">Edit</a>
+                            <a href="stats.php?uid=<?php echo $row['uid'];?>" class="rbutton">Stats</a>
                         </div>
                         <div style="width:131px; float:left;">
                             <h2>ETF: 4 days</h2>
