@@ -41,25 +41,28 @@
                 $ret = $db->query($sql);
                 while($row = $ret->fetchArray(SQLITE3_ASSOC) ){                          
                 ?>
-                    
+                    <div style="float:left;" >
                     <h3>
-                        Name: <input type="text" rows="10" value="<?php echo $row['name'];?>"><br>
- 
-                        Description: <textarea ><?php echo $row['description'];?></textarea><br>
-                        Location: <input type="text" rows="10" value="<?php echo $row['location'];?>"><br>
-                        Address: <input type="text" rows="10" value="Broken until I get a geocoding api key"><br>
-                        <img src="<?php echo $row['image_path'];?>"><br>
-                        <input type="file" name="image" id="editform" accept="image/*"><br>
-                        Groups: <input type="text" alt="comma seperated" rows="10" value="<?php echo $row['groups'];?>"><br>
-                        Types: <input type="text" rows="10" value="<?php echo $row['type'];?>"><br>
-                        Average Area: <input type="number" rows="10" value="<?php echo $row['csa'];?>">cm<sup>2</sup><br>                   
-  <div class="wrapper" style="display:block;">
-  help
-    <div class="tooltip">This is where it tells you how to do the thing</div>
-  </div>
-</div>
-                        
-                        
+                    <form action="edit.php?uid=<?php echo $_GET['uid'] ?>" method="post" id="editform">
+                        <table>
+                            <tr><td>Name: </td><td><input type="text" rows="10" value="<?php echo $row['name'];?>"></td></tr>
+                            <tr><td>Description:</td><td> <textarea form="editform"><?php echo $row['description'];?></textarea></td></tr>
+                            <tr><td>Location:</td><td> <input type="text" rows="10" value="<?php echo $row['location'];?>"></td></tr>
+                            <tr><td>Address:</td><td> <textarea form="editform">Broken until I get a geocoding API key</textarea></td></tr>
+                            <tr><td>Groups:</td><td> <input type="text" alt="comma seperated" rows="10" value="<?php echo $row['groups'];?>"></td></tr>
+                            <tr><td>Types:</td><td> <input type="text" rows="10" value="<?php echo $row['type'];?>"></td></tr>
+                            <tr><td>Average Area:</td><td> <input type="number" rows="10" value="<?php echo $row['csa'];?>">cm<sup>2</sup></td></tr>
+                            <tr><td><input type="file" name="image" id="editform" accept="image/*"></td><td><input value="Confirm Edits" name="confirm" type="submit"><input value="Cancel" name="cancel" type="submit"></td></tr>                 
+                            <!--<div class="wrapper" style="display:block;">
+                                help
+                                <div class="tooltip">This is where it tells you how to do the thing</div>
+                            </div>
+                            </div>-->
+                        </table>
+                    </form>
+                    </h3>
+                    </div>
+                    <div style="float:left;" ><img src="<?php echo $row['image_path'];?>" style="width:200px; height:280px; padding:10px;"></div>
                 <?php } ?>
         </p>
        

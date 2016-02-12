@@ -162,7 +162,7 @@ filterbar {
 
 
 
-.wrapper {
+td.wrapper {
   cursor: help;
   position: relative;
   text-align: center;
@@ -171,7 +171,7 @@ filterbar {
 
 }
 
-.wrapper .tooltip {
+td.wrapper .tooltip {
   background: #564256;
   color:#FFFFFF;
   left: 50%%;
@@ -189,7 +189,7 @@ filterbar {
 
 
   
-.wrapper:hover .tooltip {
+td.wrapper:hover .tooltip {
   opacity: 1;
   pointer-events: auto;
  
