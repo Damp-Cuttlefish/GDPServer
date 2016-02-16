@@ -22,9 +22,9 @@
         </div>
         <p>
         <h3>
-            Holy Shit
+            Oh No!
         </h3>
-        Literally everything is on fire, run whilst you still can
+        Everything is on fire, run whilst you still can!
         </p>
         <div style="width:70px; float:left;">
             <ftxt> 🔋 </ftxt>
