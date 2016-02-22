@@ -21,7 +21,7 @@
        if(!$db){
           echo $db->lastErrorMsg();
        } else {
-          echo "Opened database successfully\n";
+
        }
     ?>
     <h1 style="z-index:2;">&nbsp;&nbsp;Binformant v0.2β </h1>

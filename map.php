@@ -2,10 +2,11 @@
 <head>
     <link rel="stylesheet" type="text/css" href="layout.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
 </head>
 <meta charset="UTF-8">
 <body>
-    <h1>&nbsp;&nbsp;Binformant v0.1β </h1>
+    <h1>&nbsp;&nbsp;Binformant v0.2β </h1>
     <header>
         <a href="bins.php" class="button">Bins</a>
         <a href="groups.php" class="button">Groups</a>

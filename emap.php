@@ -29,7 +29,7 @@
        if(!$db){
           echo $db->lastErrorMsg();
        } else {
-          echo "Opened database successfully\n";
+
        }
     ?>
     <div id="map"></div>

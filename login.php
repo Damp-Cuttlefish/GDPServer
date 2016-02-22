@@ -6,7 +6,7 @@
 </head>
 <meta charset="UTF-8">
 <body>
-    <h1>&nbsp;&nbsp;Binformant v0.1β </h1>
+    <h1>&nbsp;&nbsp;Binformant v0.2β </h1>
     <header>
         Username: <input type="text" name="firstname">
         Password: <input type="password" name="firstname">
@@ -17,7 +17,7 @@
         <h2>
             Woah, bins on the internet? The future is here
         </h2>
-        <iframe src="tothetrash.swf" width=640px height=400px > </iframe>
+        <img src="http://i.imgur.com/0wbFdAh.gif" width=640px height=400px > </img>
     </main>
     <footer>
         こんにちは、私はフッターちゃんです、はじめまして
