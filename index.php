@@ -16,7 +16,7 @@
             elseif ($_GET['ref']=='access')
                 {echo "Please Login to continue";}
             else
-                {echo "Welcome to Binformant.tk!";}
+                {echo "Welcome to Binformant.tk";}
             
         ?>
     </h1> 
