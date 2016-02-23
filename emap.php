@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+  include 'accesscheck.php';
+?>
 <html>
   <head>
     <title>Simple Map</title>

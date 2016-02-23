@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+  include 'accesscheck.php';
+?>
+
 <head>
     <link rel="stylesheet" type="text/css" href="layout.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
@@ -31,7 +35,7 @@
         <a href="alert.php" class="button">Alerts</a>
         <a href="map.php" class="button">Map</a>
         <a href="set.php" class="button">Settings</a>
-        <a href="login.php" class="button">Log Out</a>
+        <a href="session.php?action=logout" class="button">Log Out</a>
     </header>
     <main style="z-index:-2;">
         <h2>Bins</h2>
@@ -115,4 +119,5 @@
 </body>
 <?php
 $db->close();
+
 ?>
