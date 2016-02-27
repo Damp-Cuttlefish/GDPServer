@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
-  include 'accesscheck.php';
+  include 'lib/accesscheck.php';
+  include 'lib/dbopen.php';
 ?>
 <html>
   <head>
@@ -20,21 +21,6 @@
     </style>
   </head>
   <body>
-  <?php
-       class BDB extends SQLite3
-       {
-          function __construct()
-          {
-             $this->open('bins.db');
-          }
-       }
-       $db = new BDB();
-       if(!$db){
-          echo $db->lastErrorMsg();
-       } else {
-
-       }
-    ?>
     <div id="map"></div>
     <script>
       var map;

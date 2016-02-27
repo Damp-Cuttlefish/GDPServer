@@ -2,7 +2,6 @@
 Serverside software for bin monitoring, pretty cool right?
 
 Planned objectives: High priority:
--Move database management code into separate file to simplify access and queries
 -Integrate user auth with user database
 -Implement sign up page
 -Implement user settings page

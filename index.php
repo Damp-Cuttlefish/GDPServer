@@ -9,15 +9,21 @@
 <body>
     <h1>&nbsp;&nbsp;  
     <?php
+        if(isset($_GET['ref']))
+        {
             if ($_GET['ref']=='logout')
                 {echo "Session Destroyed";}
             elseif ($_GET['ref']=='authfail')
                 {echo "Incorrect Username or Password";}
             elseif ($_GET['ref']=='access')
                 {echo "Please Login to continue";}
+            elseif ($_GET['ref']=='signup')
+                {echo "Account Registered";}
             else
+                echo "Something's gone wrong";
+        }
+        else
                 {echo "Welcome to Binformant.tk";}
-            
         ?>
     </h1> 
     <header>
@@ -27,12 +33,18 @@
             header("Location: bins.php");
             }
         ?>
+        
         <form method="post" action="session.php?action=login">
         Username: <input type="text" name="usr">
         Password: <input type="password" name="pswd">
 
         <input type="submit" value="Login" class="pbutton"></input>
+
+            <input type="submit" value="Sign Up" class="pbutton" form="sup"></input>
         </form>
+                <form method="get" action="signup.php" id="sup"></form>
+        
+
     </header>
     <main>
         <h2></h2>

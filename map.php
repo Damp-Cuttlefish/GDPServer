@@ -13,7 +13,7 @@
         <a href="alert.php" class="button">Alerts</a>
         <a href="map.php" class="abutton + button">Map</a>
         <a href="set.php" class="button">Settings</a>
-        <a href="login.php" class="button">Log Out</a>
+        <a href="session.php?action=logout" class="button">Log Out</a>
     </header>
     <main>
     <h2>Map</h2>

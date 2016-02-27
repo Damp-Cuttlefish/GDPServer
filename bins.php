@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
-  include 'accesscheck.php';
+  include 'lib/accesscheck.php';
+  include 'lib/dbopen.php';
 ?>
 
 <head>
@@ -13,21 +14,6 @@
 </head>
 <meta charset="UTF-8">
 <body>
-    <?php
-       class BDB extends SQLite3
-       {
-          function __construct()
-          {
-             $this->open('bins.db');
-          }
-       }
-       $db = new BDB();
-       if(!$db){
-          echo $db->lastErrorMsg();
-       } else {
-
-       }
-    ?>
     <h1 style="z-index:2;">&nbsp;&nbsp;Binformant v0.2β </h1>
     <header style="z-index:1;">
         <a href="bins.php" class="abutton + button">Bins</a>

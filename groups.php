@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
-  include 'accesscheck.php';
+  include 'lib/accesscheck.php';
+  
 ?>
 <head>
     <link rel="stylesheet" type="text/css" href="layout.css">
