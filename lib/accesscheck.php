@@ -1,6 +1,6 @@
 <?php
             session_start();
-            if (! isset($_SESSION['usr']) || ! isset($_SESSION['pswd']))
+            if (! isset($_SESSION['usr']))
             {
             header("Location: /?ref=access");
             exit(0);
