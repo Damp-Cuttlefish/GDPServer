@@ -22,8 +22,23 @@
         <h2>Alerts</h2>
         <p>
         <h3>
-            Default update times?<br>
-            How long to keep data?
+            <form action="edit.php?uid=<?php echo $_GET['uid'] ?>" method="post" id="editform">
+                <table>
+                    <tr><td>Name: </td><td><input type="text" rows="10" value="<?php echo $row['name'];?>"></td></tr>
+                    <tr><td>Description:</td><td> <textarea form="editform"><?php echo $row['description'];?></textarea></td></tr>
+                    <tr><td>Location:</td><td> <input type="text" rows="10" value="<?php echo $row['location'];?>"></td></tr>
+                    <tr><td>Address:</td><td> <textarea form="editform">Broken until I get a geocoding API key</textarea></td></tr>
+                    <tr><td>Groups:</td><td> <input type="text" alt="comma seperated" rows="10" value="<?php echo $row['groups'];?>"></td></tr>
+                    <tr><td>Types:</td><td> <input type="text" rows="10" value="<?php echo $row['type'];?>"></td></tr>
+                    <tr><td>Average Area:</td><td> <input type="number" rows="10" value="<?php echo $row['csa'];?>">cm<sup>2</sup></td></tr>
+                    <tr><td><input type="file" name="image" id="editform" accept="image/*"></td><td><input value="Confirm Edits" name="confirm" class="lpbutton" type="submit"> <input value="Cancel" class="lpbutton" name="cancel" type="submit"></td></tr>                 
+                    <!--<div class="wrapper" style="display:block;">
+                        help
+                        <div class="tooltip">This is where it tells you how to do the thing</div>
+                    </div>
+                    </div>-->
+                </table>
+            </form>
         </h3>
         More settings and shit
         </p>

@@ -17,7 +17,7 @@
                 {echo "Incorrect Username or Password";}
             elseif ($_GET['ref']=='access')
                 {echo "Please Login to continue";}
-            elseif ($_GET['ref']=='signup')
+            elseif ($_GET['ref']=='create')
                 {echo "Account Registered";}
             else
                 echo "Something's gone wrong";

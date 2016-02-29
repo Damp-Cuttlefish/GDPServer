@@ -1,9 +1,7 @@
-# Binformant server
+# Binformant server      
 Serverside software for bin monitoring, pretty cool right?
 
 Planned objectives: High priority:
--Integrate user auth with user database
--Implement sign up page
 -Implement user settings page
 -Finalize design of analytics pages
 -Implement analytics pages

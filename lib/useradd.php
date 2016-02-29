@@ -39,18 +39,12 @@ if ( $_POST['pass']!= $_POST['passconfirm']){
     header("Location: signup.php?ref=pconflict");
     die();
 }
-        
-        
-        
-        
-        
-       
-        $sql = "INSERT INTO users VALUES ('acc-".guidv4(openssl_random_pseudo_bytes(16))."', '".$_POST['username']."', '".password_hash($_POST['pass'], PASSWORD_DEFAULT)."', '".$_POST['email']."', ' ' )";
-        $ret= $db->exec($sql);
-        
-    
-    
-        
-echo "<br>".$sql;
+
+$sql = "INSERT INTO users VALUES ('acc-".guidv4(openssl_random_pseudo_bytes(16))."', '".$_POST['username']."', '".password_hash($_POST['pass'], PASSWORD_DEFAULT)."', '".$_POST['email']."', ' ' )";
+$ret= $db->exec($sql);
+header("Location: index.php?ref=create");
+die();
+
+
 ?>
 

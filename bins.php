@@ -75,7 +75,7 @@
                     <td><img src="<?php echo $row['image_path'];?>"></td>
                     <td>
                         <div style="width:131px; float:left;">
-                            <ftxt> 32% </ftxt>
+                            <ftxt> 12% </ftxt>
                         </div>
                         <div style="width:131px; float:right;">
                             <a href="edit.php?uid=<?php echo $row['uid'];?>" class="rbutton">Edit</a>
