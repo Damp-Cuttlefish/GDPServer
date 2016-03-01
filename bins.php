@@ -55,7 +55,7 @@
             </div>
         </filterbar>
         &nbsp;
-        <a href="bins.php" class="rbutton">Add</a>
+        <a href="edit.php?uid=new" class="rbutton">Add</a>
         <a href="bins.php" class="rbutton">???</a>
         &nbsp;&nbsp;&nbsp;
         <a href="bins.php" class="lbutton">Filter</a>

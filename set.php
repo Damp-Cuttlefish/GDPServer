@@ -41,11 +41,7 @@
                     <tr><td>Confirm New Password:</td><td><input type="password" name="passconfirm"></tr></td>
                     <tr><td>Old Password**:</td><td><input type="password" name="password"></tr></td>
                     <tr><td><input value="Confirm Edits" name="confirm" class="lpbutton" type="submit"> <input value="Cancel" class="lpbutton" name="cancel" type="submit"></tr></td>
-                    <!--<div class="wrapper" style="display:block;">
-                        help
-                        <div class="tooltip">This is where it tells you how to do the thing</div>
-                    </div>
-                    </div>-->
+       
                 </table>
             </form>
         </h3>
