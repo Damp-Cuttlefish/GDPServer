@@ -1,8 +1,8 @@
 # Binformant server      
 Serverside software for bin monitoring, pretty cool right?
 
-Planned objectives: 
-High priority:
+Planned objectives:   
+High priority:  
 -Implement user settings page  
 -Finalize design of analytics pages  
 -Implement analytics pages  
@@ -10,7 +10,7 @@ High priority:
 Implement Alerts page  
 -Fix edit pages so they can actually access the database  
 -Add WiFi file generation to settings page  
-
+  
 Low priority: 
 -Finalize and implement email notification system  
 -Implement more secure session tokens  
