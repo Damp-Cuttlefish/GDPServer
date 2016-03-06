@@ -65,7 +65,7 @@
             <table style="width:100%">
                 
                 <?php 
-                $sql ="SELECT * from bins;";
+                $sql ="SELECT * from bins where account_id = '".$_SESSION['usr']."';";
 
                 $ret = $db->query($sql);
                 while($row = $ret->fetchArray(SQLITE3_ASSOC) ){                          

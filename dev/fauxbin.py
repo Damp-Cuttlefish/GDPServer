@@ -14,6 +14,7 @@ fillrate = float(sys.argv[3]) #2float(raw_input("Fill Rate(Average % per sample)
 stime = 3600#int(raw_input("Sample time(s): "))
 dpoints = int(sys.argv[4])#10000int(raw_input("No samples: "))
 reqtime = int(time.time()) - (dpoints*stime)
+print "DELETE FROM bindata WHERE uid = '"+uid+"';"
 
 for x in range(0, 10000):
     randp = 2*random.random()
@@ -24,7 +25,7 @@ for x in range(0, 10000):
          
     bin_current= bin_current+filla
     reqtime = reqtime+stime
-    print "INSERT INTO raw-bins VALUES ("+uid+", "+str(int(bin_current)) + ", " + str((bin_max)) + ', ' +str(reqtime) + ", 'OK');"   
+    print "INSERT INTO bindata VALUES ('"+uid+"', "+str(int(bin_current)) + ", " + str((bin_max)) + ', ' +str(reqtime) + ", 'OK');"   
     #print str(binp)+"%"
     #for x in range(0, int(100*(bin_current/bin_max))):
     #    sys.stdout.write( "#")

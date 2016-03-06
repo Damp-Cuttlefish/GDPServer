@@ -32,7 +32,7 @@
         
         var locations = [
          <?php 
-                $sql ="SELECT * from bins;";
+                $sql ="SELECT * from bins where account_id = '".$_SESSION['usr']."';";
 
                 $ret = $db->query($sql);
                 $pointcount = 1;
