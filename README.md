@@ -3,14 +3,12 @@ Serverside software for bin monitoring, pretty cool right?
 
 Planned objectives:   
 High priority:  
--Bin addition  
 -Finish user settings page  
 -Finalize design of analytics pages  
 -Implement analytics pages  
 -Finalize and Implement Groups page  
 -Implement Alerts page  
--Fix edit pages so they can actually access the database  
--Add WiFi file generation to settings page  
+-Finalize communication protocol for USB settings app  
   
 Low priority:  
 -Rename status column of bins table in database from staus to status
