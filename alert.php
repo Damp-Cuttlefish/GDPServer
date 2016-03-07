@@ -19,34 +19,30 @@
         <a href="session.php?action=logout" class="button">Log Out</a>
     </header>
     <main>
+        <h2>Example Alerts</h2>
         <h2>Alerts</h2>
+        <h3>No Alerts for this account</h3>
+        <h2>Example Alerts</h2>
         <div style="width:70px; float:left;">
             <ftxt> [!] </ftxt>
         </div>
         <p>
         <h3>
-            Oh No!
+            Fill Alert
         </h3>
-        Everything is on fire, run whilst you still can!
+        Sudden fill detected in <a href="http://binformant.tk/edit.php?uid=bin-456-763-345">Student Union #2</a>
         </p>
         <div style="width:70px; float:left;">
             <ftxt> 🔋 </ftxt>
         </div>
         <p>
         <h3>
-            More importantly
+            Battery Alert
         </h3>
-        Your batteries are getting kinda low
+        Low battery alert for <a href="http://binformant.tk/edit.php?uid=bin-123-456-789">Student Union</a>, battery has been low for 3 days
         </p>
-        <div style="width:70px; float:left;">
-            <ftxt>F</ftxt>
-        </div>
-        <p>
-        <h3>
-            Oh and by the way
-        </h3>
-        That cool bin's been full for a while
-        </p>
+       
+        
     </main>
     <footer>
         こんにちは、私はフッターちゃんです、はじめまして

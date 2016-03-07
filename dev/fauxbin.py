@@ -10,13 +10,13 @@ bin_max = int(sys.argv[1])
 bin_current = 0
 uid = "bin-"+str(sys.argv[2])
 
-fillrate = float(sys.argv[3]) #2float(raw_input("Fill Rate(Average % per sample): "))
-stime = 3600#int(raw_input("Sample time(s): "))
+fillrate = float(sys.argv[3]) #Fillrate
+stime = 3600 #Sample time
 dpoints = int(sys.argv[4])#10000int(raw_input("No samples: "))
 reqtime = int(time.time()) - (dpoints*stime)
 print "DELETE FROM bindata WHERE uid = '"+uid+"';"
 
-for x in range(0, 10000):
+for x in range(0, dpoints):
     randp = 2*random.random()
     filla = randp*fillrate
     binp = int(100*(bin_current/bin_max))
@@ -29,7 +29,7 @@ for x in range(0, 10000):
     #print str(binp)+"%"
     #for x in range(0, int(100*(bin_current/bin_max))):
     #    sys.stdout.write( "#")
-    
+
 #time.sleep(0.01)
     
 exit(0)

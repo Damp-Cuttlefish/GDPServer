@@ -45,7 +45,7 @@
 
         <?php if ($_GET['uid'] == 'new'): ?>
             
-            <form action="edit.php?uid=new" method="post" id="editform">
+            <form action="edit.php?uid=new" enctype="multipart/form-data" method="post" id="editform">
                         <table>
                             <tr><td>Bin ID: </td><td><input type="text" name="uid" rows="10" value=""></td></tr>
                             <tr><td>Name: </td><td><input type="text" rows="10" name="name" value=""></td></tr>
@@ -69,7 +69,7 @@
                 $row = $ret->fetchArray(SQLITE3_ASSOC)                          
         ?>
                     
-                    <form action="edit.php?uid=<?php echo $_GET['uid'] ?>" method="post" id="editform"><input type ="hidden" name="uid" value="<?php echo $row['uid']; ?>">
+                    <form action="edit.php?uid=<?php echo $_GET['uid'] ?>" method="post" enctype="multipart/form-data" id="editform"><input type ="hidden" name="uid" value="<?php echo $row['uid']; ?>">
                         <table>
                             <tr><td>Name: </td><td><input type="text" name="name" rows="10" value="<?php echo $row['name'];?>"></td></tr>
                             <tr><td>Description:</td><td> <textarea name="description" form="editform"><?php echo $row['description'];?></textarea></td></tr>

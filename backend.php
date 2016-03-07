@@ -1,8 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<link rel="icon" type="image/gif" href="/public/chen.gif" >
-<link rel="stylesheet" type="text/css" href="horrendous_style.css">
+<link rel="stylesheet" type="text/css" href="layout.css">
 </head>
 
 <body>
@@ -17,12 +16,11 @@ Battery Level: <?php echo $_POST["battlevel"]; ?><br>
 
 <?php else: ?>
 
-<form action="/public/GDPServer/ctest.php" method="post">
-Bin Level: <input type="text" name="level"><br>
-Bin Level Max: <input type="text" name="levelmax"><br>
-Battery Level: <input type="text" name="battlevel"><br>
-UID: <input type="text" name="uid"><br>
-
+<form action="/client.php" method="post">
+Bin Level: <input type="text" name="BinLevelCurrent"><br>
+Bin Level Max: <input type="text" name="BinLevelMax"><br>
+Status: <input type="text" name="Status"><br>
+UID: <input type="text" name="UID"><br>
 <input type="submit" name="submit">
 </form>
 
