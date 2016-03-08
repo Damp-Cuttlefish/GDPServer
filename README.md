@@ -7,8 +7,6 @@ High priority:
 -Finalize design of analytics pages  
 -Implement analytics pages  
 -Finalize and Implement Groups page  
--Implement Alerts page  
--Finalize communication protocol for USB settings app  
   
 Low priority:  
 -Rename status column of bins table in database from staus to status
@@ -21,5 +19,5 @@ Low priority:
 -Add proper input sanitation to all database queries  
 -Add geocoding and geopip location suggestions to bin pages  
 -Clean up file structure so things are in places that make sense  
--Make the filter bar CSS less retarded  
+-Make the filter bar CSS less awkward  
 -Think of something to put on the home page  
