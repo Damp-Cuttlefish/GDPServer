@@ -10,8 +10,8 @@
     }
     else
         $uid = $_GET['uid'];
-//    echo $sql;
-    $ret= $db->exec($sql);
+    if (isset($sql))
+        $ret= $db->exec($sql);
 
     if ($_GET['uid'] == 'new' && isset($_POST['uid']))
                  header('Location: edit.php?uid='.$_POST['uid']);     
@@ -66,7 +66,7 @@
         <?php else:
                 $sql ="SELECT * from bins where uid = '" . $_GET['uid'] . "';";
                 $ret = $db->query($sql);
-                $row = $ret->fetchArray(SQLITE3_ASSOC)                          
+                $row = $ret->fetchArray(SQLITE3_ASSOC);                          
         ?>
                     
                     <form action="edit.php?uid=<?php echo $_GET['uid'] ?>" method="post" enctype="multipart/form-data" id="editform"><input type ="hidden" name="uid" value="<?php echo $row['uid']; ?>">

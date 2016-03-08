@@ -30,8 +30,9 @@
         <h3>
             Fill Alert
         </h3>
-        Sudden fill detected in <a href="http://binformant.tk/edit.php?uid=bin-456-763-345">Student Union #2</a>
+        Sudden fill detected in <a href="http://binformant.tk/stats.php?uid=bin-456-763-345">Student Union #2</a>
         </p>
+        <br>
         <div style="width:70px; float:left;">
             <ftxt> 🔋 </ftxt>
         </div>
@@ -39,7 +40,7 @@
         <h3>
             Battery Alert
         </h3>
-        Low battery alert for <a href="http://binformant.tk/edit.php?uid=bin-123-456-789">Student Union</a>, battery has been low for 3 days
+        Low battery alert for <a href="http://binformant.tk/stats.php?uid=bin-123-456-789">Student Union</a>, battery has been low for 3 days
         </p>
        
         

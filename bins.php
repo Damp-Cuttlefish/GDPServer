@@ -68,21 +68,23 @@
                 $sql ="SELECT * from bins where account_id = '".$_SESSION['usr']."';";
 
                 $ret = $db->query($sql);
-                while($row = $ret->fetchArray(SQLITE3_ASSOC) ){                          
+                while($row = $ret->fetchArray(SQLITE3_ASSOC) ){
+                $crunchid = $row['uid'];
+                include 'lib/crunch.php';                          
                 ?>
                 
                 <tr width=100px>
                     <td><img src="<?php echo $row['image_path'];?>"></td>
                     <td>
                         <div style="width:131px; float:left;">
-                            <ftxt> 12% </ftxt>
+                            <ftxt> <?php echo $fill;?>% </ftxt>
                         </div>
                         <div style="width:131px; float:right;">
                             <a href="edit.php?uid=<?php echo $row['uid'];?>" class="rbutton">Edit</a>
                             <a href="stats.php?uid=<?php echo $row['uid'];?>" class="rbutton">Stats</a>
                         </div>
                         <div style="width:131px; float:left;">
-                            <h2>ETF: 4 days</h2>
+                            <h2>ETF: <?php echo round($etf/(3600*24))?> days</h2>
                         </div>
                         <div style="width:300px; float:left;">
                             <h3>
