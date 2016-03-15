@@ -9,7 +9,7 @@
 </head>
 <meta charset="UTF-8">
 <body>
-    <h1>&nbsp;&nbsp;Binformant v0.1β </h1>
+    <h1>&nbsp;&nbsp;Binformant</h1>
      <?php
         include "lib/dbopen.php";
         $sql ="SELECT * from bins where uid = '" . $_GET['uid'] . "';";
@@ -25,7 +25,7 @@
         <a href="session.php?action=logout" class="button">Log Out</a>
     </header>
     <main>
-        <h2>Cool bin statistics</h2>
+        <h2>.</h2>
         <h2>Statistics for <?php echo $binprofile['name'];?></h2>
      
         <p>
@@ -39,8 +39,8 @@
             
             echo "<h3>Data Frequency</h3>";
             echo $pointCount." datapoints found, <br>";
-            echo "First data recieved on <b>".date("l jS \of F Y h:i:s A", $firstrow['time'])."</b><br>";
-            echo "Latest data recieved on <b>".date("l jS \of F Y h:i:s A", $lastrow['time'])."</b><br>";
+            echo "First data recieved on <b>".date("l jS \of F Y h:i A", $firstrow['time'])."</b><br>";
+            echo "Latest data recieved on <b>".date("l jS \of F Y h:i A", $lastrow['time'])."</b><br>";
             echo "Average sample time <b>".round(($lastrow['time']-$firstrow['time'])/($pointCount*60))." minutes(s)</b>"   ;
         ?>
         <h3>Fill Rate</h3>

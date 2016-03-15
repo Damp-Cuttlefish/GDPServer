@@ -14,7 +14,7 @@ else{
 </head>
 <meta charset="UTF-8">
 <header>
-<h1>&nbsp;&nbsp;Binformant v0.2β</h1>
+<h1>&nbsp;&nbsp;Binformant</h1>
 <form method="post" action="session.php?action=login">
         Username: <input type="text" name="usr">
         Password: <input type="password" name="pswd">

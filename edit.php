@@ -28,7 +28,7 @@
 <meta charset="UTF-8">
 <body>
     
-    <h1>&nbsp;&nbsp;Binformant v0.2β </h1>
+    <h1>&nbsp;&nbsp;Binformant</h1>
     <header>
         <a href="bins.php" class="abutton + button">Bins</a>
         <a href="groups.php" class="button">Groups</a>

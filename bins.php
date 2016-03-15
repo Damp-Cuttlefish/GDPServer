@@ -14,7 +14,7 @@
 </head>
 <meta charset="UTF-8">
 <body>
-    <h1 style="z-index:2;">&nbsp;&nbsp;Binformant v0.2β </h1>
+    <h1 style="z-index:2;">&nbsp;&nbsp;Binformant </h1>
     <header style="z-index:1;">
         <a href="bins.php" class="abutton + button">Bins</a>
         <a href="groups.php" class="button">Groups</a>
@@ -56,7 +56,6 @@
         </filterbar>
         &nbsp;
         <a href="edit.php?uid=new" class="rbutton">Add</a>
-        <a href="bins.php" class="rbutton">???</a>
         &nbsp;&nbsp;&nbsp;
         <a href="bins.php" class="lbutton">Filter</a>
         </div>

@@ -10,7 +10,7 @@
 </head>
 <meta charset="UTF-8">
 <body>
-    <h1>&nbsp;&nbsp;Binformant v0.2β </h1>
+    <h1>&nbsp;&nbsp;Binformant </h1>
     <header>
         <a href="bins.php" class="button">Bins</a>
         <a href="groups.php" class="abutton + button">Groups</a>
@@ -31,42 +31,31 @@
                 <tr width=100px>
                     <td><img src="bin2.jpg"></td>
                     <td>
-                        <div style="width:131px; float:left;">
-                            <ftxt> Yes </ftxt>
-                        </div>
                         <div style="width:131px; float:right;">
-                            <a href="edit.php" class="rbutton">Edit</a>
-                            <a href="stats.php" class="rbutton">Stats</a>
-                        </div>
-                        <div style="width:131px; float:left;">
-                            <h2>????</h2>
+                            <a href="edit.php" class="rbutton">Members</a>
+                            <a href="stats.php" class="rbutton">Settings</a>
                         </div>
                         <div style="width:300px; float:left;">
                             <h3>
-                                Cool Bins
+                                University
                             </h3>
-                            You know the ones
+                            Bins around the University of Portsmouth campus
                         </div>
                     </td>
                 </tr>
                 <tr width=100px>
                     <td><img src="bin.jpg"></td>
-                    <td>
-                        <div style="width:131px; float:left;">
-                            <ftxt> No </ftxt>
-                        </div>
+                    <td>                        
                         <div style="width:131px; float:right;">
                             <a href="edit.php" class="rbutton">Edit</a>
                             <a href="stats.php" class="rbutton">Stats</a>
                         </div>
-                        <div style="width:131px; float:left;">
-                            <h2>???</h2>
-                        </div>
+                   
                         <div style="width:300px; float:left;">
                             <h3>
-                                Uncool Bins
+                                Customer A
                             </h3>
-                            The shit bins noone likes
+                            Bins owned by a hypotheical waste management client
                         </div>
                     </td>
                 </tr>

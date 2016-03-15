@@ -5,7 +5,7 @@
 </head>
 
 <body>
-<h1>Binformant v0.1β </h1>
+<h1>Binformant</h1>
 <?php if (array_key_exists('submit', $_POST)): ?>
 Data From Sensor #<?php echo $_POST["uid"]; ?><br>
 
