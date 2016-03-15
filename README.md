@@ -1,5 +1,5 @@
 # Binformant server      
-Serverside software for bin monitoring, pretty cool right?
+Serverside software for bin monitoring, written as part of ENG500(Group Design Project) Coursework 2
 
 Planned objectives:   
 High priority:  
@@ -9,10 +9,9 @@ High priority:
 Low priority:  
 -Add background database checks for error states  
 -Put something better in the footer  
--Rename status column of bins table in database from staus to status
--Finalize and implement email notification system  
+-Rename status column of bins table in database from staus to status  
 -Implement more secure session tokens  
--Implement better database access limitations based on user & session ID  
+-Implement better database access limitations based on user sessions  
 -Move analytics and database heavy code into idle time process that generates a database of pre processed data to improve page load times  
 -Add links between map locations and bin pages  
 -Implement filtering on all relevant pages  
