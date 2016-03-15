@@ -1,5 +1,6 @@
 # Binformant server      
-Serverside software for bin monitoring, written as part of ENG500(Group Design Project) Coursework 2
+Serverside software for bin monitoring:
+Written as part of ENG500(Group Design Project), Coursework 2, Group 6
 
 Planned objectives:   
 High priority:  
