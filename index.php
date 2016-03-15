@@ -49,7 +49,7 @@
     <main>
         <h2></h2>
         <h2>
-            Woah, bins on the internet? The future is here
+            
         </h2>
         <img src="http://i.imgur.com/0wbFdAh.gif" width=640px height=400px > </img>
         
